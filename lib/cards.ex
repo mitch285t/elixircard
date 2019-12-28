@@ -58,7 +58,9 @@ Determines whether a deck has a given card or not
       {:error, _reason} -> "That file does not exist"
     end
   end
-
+  @doc """
+  Combines common methods into one to save time
+  """
   def create_hand(hand_size) do
     Cards.create_deck
     |> Cards.shuffle
